@@ -1,11 +1,10 @@
 {
   "name": "kingbot",
   "version": "1.0.0",
-  "description": "Kingbot - Multi-platform streaming bot with TTS tiers, custom AI, Stripe, and OAuth",
+  "description": "Kingbot - Multi-platform streaming bot",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.21.2",
@@ -14,7 +13,7 @@
     "stripe": "^17.5.0",
     "axios": "^1.7.9",
     "multer": "^1.4.5-lts.1",
-    "express-rate-limit": "^7.5.0",
+    "express-rate-limit": "^7.5.0"
   },
   "engines": {
     "node": ">=18"
