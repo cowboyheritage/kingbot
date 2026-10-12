@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kingbot — Multi-Platform Streaming Bot | TTS, AI Chat, Alerts & More</title>
+<meta name="description" content="Kingbot: The advanced multi-platform bot for Kick, Twitch, X, Rumble & Parti. AI TTS with tiers, Grok-powered AI chatbot, stream listening, tipping, and full streamer control.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        xblack: '#000000',
+        xdark: '#0f0f0f',
+        xcard: '#16181c',
+        xborder: '#2f3336',
+        xtext: '#e7e9ea',
+        xmuted: '#71767b',
+        accent: '#ffffff'
+      }
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', system-ui, sans-serif; background: #000; color: #e7e9ea; }
+.hero-gradient { background: radial-gradient(ellipse at top, #1a1a1a 0%, #000 70%); }
+.card-hover:hover { border-color: #fff; transform: translateY(-2px); transition: all 0.2s; }
+.tier-popular { border-color: #fff; box-shadow: 0 0 20px rgba(255,255,255,0.1); }
+nav a:hover { color: #fff; }
+</style>
+</head>
+<body class="bg-black text-xtext antialiased">
+
+<!-- Nav -->
+<nav class="border-b border-xborder sticky top-0 bg-black/80 backdrop-blur z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-8 h-8 bg-white rounded-md flex items-center justify-center font-bold text-black text-lg">K</div>
+      <span class="text-xl font-bold tracking-tight">Kingbot</span>
+    </div>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-xmuted">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#platforms">Platforms</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="#voices">Voices</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="#login" class="text-sm px-4 py-2 rounded-full border border-xborder hover:bg-white/5">Sign in</a>
+      <a href="#getstarted" class="text-sm px-5 py-2 rounded-full bg-white text-black font-semibold hover:bg-gray-200">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero-gradient pt-24 pb-20 px-6">
+  <div class="max-w-5xl mx-auto text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-xborder text-xs text-xmuted mb-6">
+      <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+      Multi-Platform • Kick • Twitch • X • Rumble • Parti
+    </div>
+    <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
+      The streaming bot<br>that actually listens.
+    </h1>
+    <p class="text-xl text-xmuted max-w-2xl mx-auto mb-10">
+      AI TTS with tiered character limits. Grok Expert + Chaotic mode. Stream-aware AI that responds like a person. Full streamer control. Advanced security. Donations with clear legal terms.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#pricing" class="px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-200 text-lg">View Pricing</a>
+      <a href="/dashboard" class="px-8 py-4 border border-xborder rounded-full hover:bg-white/5 text-lg">Open Dashboard</a>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section id="features" class="py-24 px-6 border-t border-xborder">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-4">Everything Kickbot does. Plus more.</h2>
+    <p class="text-center text-xmuted mb-16 max-w-2xl mx-auto">Legal, original implementation. Multi-platform from day one. Grok-powered AI. Streamer-controlled limits.</p>
+    
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-xcard border border-xborder rounded-2xl p-6 card-hover">
+        <div class="text-3xl mb-4">🎙️</div>
+        <h3 class="text-xl font-semibold mb-2">Tiered AI TTS</h3>
+        <p class="text-xmuted text-sm">Free voices + custom clones at $4.99. Double character max at $9.99. Unlimited at $14.99. Streamer sets max length, delay, cooldowns, who can use.</p>
+      </div>
+      <div class="bg-xcard border border-xborder rounded-2xl p-6 card-hover">
+        <div class="text-3xl mb-4">🧠</div>
+        <h3 class="text-xl font-semibold mb-2">Grok AI Chatbot</h3>
+        <p class="text-xmuted text-sm">Expert or Chaotic mode toggle. Responds when addressed by custom bot name. $29.99 unlocks real-time stream listening with frequency slider.</p>
+      </div>
+      <div class="bg-xcard border border-xborder rounded-2xl p-6 card-hover">
+        <div class="text-3xl mb-4">🌐</div>
+        <h3 class="text-xl font-semibold mb-2">Multi-Platform</h3>
+        <p class="text-xmuted text-sm">Works as chatbot on Kick, Twitch, X, Rumble, and Parti. Same dashboard controls all platforms.</p>
+      </div>
+      <div class="bg-xcard border border-xborder rounded-2xl p-6 card-hover">
+        <div class="text-3xl mb-4">💰</div>
+        <h3 class="text-xl font-semibold mb-2">Tipping / Donos</h3>
+        <p class="text-xmuted text-sm">Clear legal message sent to payment provider: willing donation, streaming service, nothing provided in return (like handing cash). Chargebacks on cardholder.</p>
+      </div>
+      <div class="bg-xcard border border-xborder rounded-2xl p-6 card-hover">
+        <div class="text-3xl mb-4">🔒</div>
+        <h3 class="text-xl font-semibold mb-2">Government-Grade Security</h3>
+        <p class="text-xmuted text-sm">Advanced encryption, rate limiting, audit logs, least-privilege access, and hardened Cloudflare infrastructure.</p>
+      </div>
+      <div class="bg-xcard border border-xborder rounded-2xl p-6 card-hover">
+        <div class="text-3xl mb-4">⚡</div>
+        <h3 class="text-xl font-semibold mb-2">Full Streamer Control</h3>
+        <p class="text-xmuted text-sm">Character max, delay, volume, cooldowns, moderation filters, voice permissions — all controlled by you in real time via dashboard or chat commands.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="py-24 px-6 bg-xdark border-t border-xborder">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-4">Simple, Transparent Pricing</h2>
+    <p class="text-center text-xmuted mb-12">Start free. Upgrade for higher TTS limits and AI features. Cancel anytime.</p>
+    
+    <div class="grid md:grid-cols-5 gap-4">
+      <!-- Free -->
+      <div class="bg-xcard border border-xborder rounded-2xl p-6">
+        <h3 class="font-semibold text-lg mb-1">Free</h3>
+        <div class="text-3xl font-bold mb-4">$0</div>
+        <ul class="text-sm text-xmuted space-y-2 mb-6">
+          <li>• Basic free TTS voices</li>
+          <li>• Standard character max</li>
+          <li>• Chatbot commands</li>
+          <li>• Alerts & widgets</li>
+          <li>• Limited AI responses</li>
+        </ul>
+        <button class="w-full py-2 rounded-full border border-xborder hover:bg-white/5 text-sm">Start Free</button>
+      </div>
+      
+      <!-- 4.99 -->
+      <div class="bg-xcard border border-xborder rounded-2xl p-6">
+        <h3 class="font-semibold text-lg mb-1">TTS Basic</h3>
+        <div class="text-3xl font-bold mb-1">$4.99<span class="text-base font-normal text-xmuted">/mo</span></div>
+        <ul class="text-sm text-xmuted space-y-2 mb-6">
+          <li>• Same character max</li>
+          <li>• Custom voice clones</li>
+          <li>• Free voices only</li>
+          <li>• Full streamer controls</li>
+        </ul>
+        <button class="w-full py-2 rounded-full border border-xborder hover:bg-white/5 text-sm">Choose Basic</button>
+      </div>
+      
+      <!-- 9.99 -->
+      <div class="bg-xcard border border-white rounded-2xl p-6 tier-popular relative">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-black text-xs font-bold px-3 py-1 rounded-full">POPULAR</div>
+        <h3 class="font-semibold text-lg mb-1">TTS Pro</h3>
+        <div class="text-3xl font-bold mb-1">$9.99<span class="text-base font-normal text-xmuted">/mo</span></div>
+        <ul class="text-sm text-xmuted space-y-2 mb-6">
+          <li>• Double character max</li>
+          <li>• Custom + free voices</li>
+          <li>• Full library access</li>
+          <li>• Priority queue</li>
+        </ul>
+        <button class="w-full py-2 rounded-full bg-white text-black font-semibold text-sm">Choose Pro</button>
+      </div>
+      
+      <!-- 14.99 -->
+      <div class="bg-xcard border border-xborder rounded-2xl p-6">
+        <h3 class="font-semibold text-lg mb-1">TTS Unlimited</h3>
+        <div class="text-3xl font-bold mb-1">$14.99<span class="text-base font-normal text-xmuted">/mo</span></div>
+        <ul class="text-sm text-xmuted space-y-2 mb-6">
+          <li>• Unlimited characters</li>
+          <li>• All voices + custom</li>
+          <li>• No length restrictions</li>
+          <li>• Full control</li>
+        </ul>
+        <button class="w-full py-2 rounded-full border border-xborder hover:bg-white/5 text-sm">Choose Unlimited</button>
+      </div>
+      
+      <!-- 29.99 -->
+      <div class="bg-xcard border border-xborder rounded-2xl p-6">
+        <h3 class="font-semibold text-lg mb-1">AI Listener</h3>
+        <div class="text-3xl font-bold mb-1">$29.99<span class="text-base font-normal text-xmuted">/mo</span></div>
+        <ul class="text-sm text-xmuted space-y-2 mb-6">
+          <li>• Everything above</li>
+          <li>• Stream-aware AI</li>
+          <li>• Frequency slider</li>
+          <li>• Grok Expert/Chaotic</li>
+          <li>• Custom bot name</li>
+        </ul>
+        <button onclick="checkout('ai-listener')" class="w-full py-2 rounded-full border border-xborder hover:bg-white/5 text-sm">Unlock AI</button>
+      </div>
+    </div>
+    <p class="text-center text-xs text-xmuted mt-8">All plans include streamer control over limits. Donations are voluntary gifts with no goods/services in return. Chargebacks are the responsibility of the cardholder.</p>
+  </div>
+</section>
+
+<!-- Platforms -->
+<section id="platforms" class="py-24 px-6 border-t border-xborder">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-6">One Dashboard. Five Platforms.</h2>
+    <p class="text-xmuted mb-12">Connect once. Control chat, TTS, AI, and alerts across Kick, Twitch, X, Rumble, and Parti.</p>
+    <div class="flex flex-wrap justify-center gap-6">
+      <div class="px-6 py-4 border border-xborder rounded-xl">Kick</div>
+      <div class="px-6 py-4 border border-xborder rounded-xl">Twitch</div>
+      <div class="px-6 py-4 border border-xborder rounded-xl">X (Twitter)</div>
+      <div class="px-6 py-4 border border-xborder rounded-xl">Rumble</div>
+      <div class="px-6 py-4 border border-xborder rounded-xl">Parti</div>
+    </div>
+  </div>
+</section>
+
+<!-- Dashboard Preview -->
+<section id="dashboard" class="py-24 px-6 bg-xdark border-t border-xborder">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-12">Streamer Dashboard</h2>
+    <div class="bg-xcard border border-xborder rounded-2xl p-8">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="font-semibold mb-4">TTS Controls</h3>
+          <div class="space-y-4 text-sm">
+            <div class="flex justify-between"><span>Max Characters</span><span class="text-xmuted">Streamer-set (tier limited)</span></div>
+            <div class="flex justify-between"><span>Delay</span><span class="text-xmuted">0–30s</span></div>
+            <div class="flex justify-between"><span>User Cooldown</span><span class="text-xmuted">0–120s</span></div>
+            <div class="flex justify-between"><span>Global Cooldown</span><span class="text-xmuted">0–120s</span></div>
+            <div class="flex justify-between"><span>Volume</span><span class="text-xmuted">0–100%</span></div>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-4">AI Personality</h3>
+          <div class="flex items-center gap-4 mb-4">
+            <span class="text-sm">Expert</span>
+            <div class="relative inline-block w-12 h-6 bg-xborder rounded-full">
+              <div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full"></div>
+            </div>
+            <span class="text-sm">Chaotic</span>
+          </div>
+          <p class="text-xs text-xmuted">Toggle between Grok Expert mode (precise, helpful) and Chaotic mode (unhinged, entertaining).</p>
+          <div class="mt-6">
+            <label class="text-sm block mb-2">AI Response Frequency (Listener tier)</label>
+            <input type="range" class="w-full" min="1" max="100" value="30">
+            <p class="text-xs text-xmuted mt-1">How often the bot comments on stream events</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Voices -->
+<section id="voices" class="py-24 px-6 border-t border-xborder">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-6">Voice Library</h2>
+    <p class="text-center text-xmuted mb-12">Clean, recognizable free voices + custom clones. Public figure voices use legally sourced samples where available. Custom voices: 1-minute guided recording prompt for high-fidelity capture.</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-xcard border border-xborder rounded-xl p-4 text-center text-sm">Brian</div>
+      <div class="bg-xcard border border-xborder rounded-xl p-4 text-center text-sm">Female</div>
+      <div class="bg-xcard border border-xborder rounded-xl p-4 text-center text-sm">Male</div>
+      <div class="bg-xcard border border-xborder rounded-xl p-4 text-center text-sm">TikTok Style</div>
+      <div class="bg-xcard border border-xborder rounded-xl p-4 text-center text-sm">Custom Clone 1</div>
+      <div class="bg-xcard border border-xborder rounded-xl p-4 text-center text-sm">Custom Clone 2</div>
+      <div class="bg-xcard border border-xborder rounded-xl p-4 text-center text-sm">+ Library</div>
+      <div class="bg-xcard border border-xborder rounded-xl p-4 text-center text-sm">Your Voice</div>
+    </div>
+  </div>
+</section>
+
+<!-- Legal / Footer -->
+<footer class="border-t border-xborder py-12 px-6 text-sm text-xmuted">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-8 mb-8">
+      <div>
+        <div class="font-bold text-white mb-2">Kingbot</div>
+        <p>Legal multi-platform streaming bot. Original implementation. Not affiliated with KickBot or any platform.</p>
+      </div>
+      <div>
+        <div class="font-semibold text-white mb-2">Donations & Payments</div>
+        <p>All tips/donations are voluntary gifts. A message is sent to the payment provider stating this is a streaming service, donations are willing, and nothing is provided in return (identical to handing cash). Chargebacks are the sole responsibility of the cardholder, not the platform or processor.</p>
+      </div>
+      <div>
+        <div class="font-semibold text-white mb-2">Security & Voices</div>
+        <p>Designed with advanced security practices. Voice cloning uses clean samples; public figure voices only where legally permissible. Custom voices require a 1-minute guided prompt for accurate capture.</p>
+      </div>
+    </div>
+    <div class="text-center text-xs border-t border-xborder pt-8">
+      © 2026 Kingbot. Run on Cloudflare. Built for streamers who want control.
+    </div>
+  </div>
+</footer>
+
+<script>
+async function checkout(tier) {
+  const r = await fetch('/api/create-checkout', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ tier })
+  });
+  const data = await r.json();
+  if (data.url) window.location = data.url;
+  else alert(data.error || 'Add Stripe keys to .env to enable payments');
+}
+</script>
+</body>
+</html>
